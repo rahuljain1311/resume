@@ -7,6 +7,13 @@ const HeaderWrapper = styled.div`
   align-items: center;
 `;
 
+const MobileHeader = styled.div`
+  background-color: grey;
+  padding-top 15px;
+  padding-bottom: 15px;
+  text-align: center;
+`;
+
 const LinksContainer = styled.div`
   display: flex;
 `;
@@ -26,9 +33,9 @@ class Header extends React.Component {
   render() {
     return (
       <>
-        <div className="d-block d-sm-none">
-          <span>mobile header</span>
-        </div>
+        <MobileHeader className="d-block d-sm-none">
+          <span>Shobhit Jain</span>
+        </MobileHeader>
         <div className="d-none d-sm-block">
           <HeaderWrapper>
             <div>
@@ -36,10 +43,9 @@ class Header extends React.Component {
             </div>
             <Space />
             <LinksContainer>
-              <LinkItem href="/features">experience</LinkItem>
-              <LinkItem>experience</LinkItem>
-              <LinkItem>experience</LinkItem>
-              <LinkItem>experience</LinkItem>
+              <LinkItem href="/features">RESEARCH</LinkItem>
+              <LinkItem>SKILLS</LinkItem>
+              <LinkItem>CV</LinkItem>
             </LinksContainer>
           </HeaderWrapper>
         </div>
