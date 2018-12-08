@@ -5,11 +5,11 @@
     background-position:center;
     position: inherit;
     background-attachment: fixed;
-    box-shadow: inset 0 0 0 1000px rgba(61, 72, 116, 0.8);
+    box-shadow: inset 0 0 0 1000px #3d4874cc;
   }
   @media only screen and (max-width: 767px) {
-    padding-top: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 130px;
+    background-color: #3d4874cc;
     // background: url('./assets/hero_bg.png');
     // background-size: cover;
     // background-position:center;
