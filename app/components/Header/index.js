@@ -1,30 +1,49 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+import styled from 'styled-components';
+const HeaderWrapper = styled.div`
+  display: flex;
+  height: 101px;
+  color: #182153;
+  align-items: center;
+`;
 
-import A from './A';
-import Img from './Img';
-import NavBar from './NavBar';
-import HeaderLink from './HeaderLink';
-import Banner from './banner.jpg';
-import messages from './messages';
+const LinksContainer = styled.div`
+  display: flex;
+`;
+
+const LinkItem = styled.a`
+  padding: 5px;
+  margin: 10px 0;
+`;
+
+const Space = styled.div`
+  display: flex;
+  flex-grow: 1;
+`;
 
 /* eslint-disable react/prefer-stateless-function */
 class Header extends React.Component {
   render() {
     return (
-      <div>
-        <A href="https://twitter.com/mxstbr">
-          <Img src={Banner} alt="react-boilerplate - Logo" />
-        </A>
-        <NavBar>
-          <HeaderLink to="/">
-            <FormattedMessage {...messages.home} />
-          </HeaderLink>
-          <HeaderLink to="/features">
-            <FormattedMessage {...messages.features} />
-          </HeaderLink>
-        </NavBar>
-      </div>
+      <>
+        <div className="d-block d-sm-none">
+          <span>mobile header</span>
+        </div>
+        <div className="d-none d-sm-block">
+          <HeaderWrapper>
+            <div>
+              <p>Shobhit Jain</p>
+            </div>
+            <Space />
+            <LinksContainer>
+              <LinkItem href="/features">experience</LinkItem>
+              <LinkItem>experience</LinkItem>
+              <LinkItem>experience</LinkItem>
+              <LinkItem>experience</LinkItem>
+            </LinksContainer>
+          </HeaderWrapper>
+        </div>
+      </>
     );
   }
 }

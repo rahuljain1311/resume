@@ -1,0 +1,40 @@
+.wrapper {
+  background: url('./assets/building_bg.jpg');
+  background-size: contain;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.photo {
+  @media only screen and (min-width: 768px) {
+    width: 100%;
+  }
+  width: 270px;
+}
+
+.heroWrapper {
+  background: #F1F1F1;
+  @media only screen and (min-width: 768px) {
+    transform: translateY(112px);
+    height: 540px;
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+.content {
+  @media only screen and (min-width: 768px) {
+    padding-top: 83px;
+    padding-left: 83px;
+  }
+}
+
+.social {
+  background: #172053;
+}
+
+.title {
+  color: #182153;
+}
