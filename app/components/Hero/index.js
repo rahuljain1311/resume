@@ -44,10 +44,10 @@ class Hero extends React.Component {
       <div className="wrapper">
         <div className="heroWrapper">
           <Intro className="row">
-            <div className="col-md-6 col-xs-12 text-center">
+            <div className="col-md-12 col-lg-6 text-center">
               <img src={photo} className="photo" alt="" />
             </div>
-            <div className="col-md-6 col-xs-12 content">
+            <div className="col-md-12 col-lg-6 content">
               <div className="title">
                 <H1>Shobhit Jain</H1>
                 <p />

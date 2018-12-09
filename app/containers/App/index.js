@@ -10,15 +10,15 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
-
-import HomePage from 'containers/HomePage/Loadable';
-import FeaturePage from 'containers/FeaturePage/Loadable';
-import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import { withResponsive } from '../../hoc/with-responsive';
 
+import HomePage from 'containers/HomePage/Loadable';
+import ResearchPage from 'containers/ResearchPage/Loadable';
+import SkillsPage from 'containers/SkillsPage/Loadable';
+import CVPage from 'containers/CVPage/Loadable';
 import GlobalStyle from '../../global-styles';
+import { withResponsive } from '../../hoc/with-responsive';
 
 const AppWrapper = styled.div`
   margin: 0 auto;
@@ -38,8 +38,9 @@ const App = () => (
     <Header />
     <Switch>
       <Route exact path="/" component={HomePage} />
-      <Route path="/features" component={FeaturePage} />
-      <Route path="" component={NotFoundPage} />
+      <Route path="/research" component={ResearchPage} />
+      <Route path="/skills" component={SkillsPage} />
+      <Route path="/cv" component={CVPage} />
     </Switch>
     <Footer />
     <GlobalStyle />

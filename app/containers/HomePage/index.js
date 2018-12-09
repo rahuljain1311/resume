@@ -19,7 +19,6 @@ import {
 } from 'containers/App/selectors';
 import Hero from '../../components/Hero';
 import Intro from '../../components/Intro';
-import Experience from '../../components/Experience';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
@@ -40,7 +39,6 @@ export class HomePage extends React.PureComponent {
         </Helmet>
         <Hero />
         <Intro />
-        <Experience />
       </article>
     );
   }

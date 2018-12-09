@@ -76,9 +76,9 @@ class Header extends React.Component {
             </HeaderWrapperDesktopHeading>
             <Space />
             <LinksContainer>
-              <LinkItem href="/features">RESEARCH</LinkItem>
-              <LinkItem>SKILLS</LinkItem>
-              <LinkItem>CV</LinkItem>
+              <LinkItem href="/research">RESEARCH</LinkItem>
+              <LinkItem href="/skills">SKILLS</LinkItem>
+              <LinkItem href="/cv">CV</LinkItem>
             </LinksContainer>
           </HeaderWrapperDesktop>
         </div>

@@ -1,5 +1,5 @@
 .wrapper {
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 940px) {
     background: url('./assets/hero_bg.png');
     background-size: cover;
     background-position:center;
@@ -7,7 +7,7 @@
     background-attachment: fixed;
     box-shadow: inset 0 0 0 1000px #3d4874cc;
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 939px) {
     padding-bottom: 130px;
     background-color: #3d4874cc;
     // background: url('./assets/hero_bg.png');
@@ -25,14 +25,14 @@
 
 .heroWrapper {
   background: #F1F1F1;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 940px) {
     transform: translateY(112px);
     width: 940px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 939px) {
     transform: translateY(56px);
     width: 340px;
     margin: 0 auto;
@@ -45,11 +45,11 @@
 .content {
   font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
   color: #182153;
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 940px) {
     padding-top: 83px;
     padding-left: 83px;
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 939px) {
     padding-top: 20px;
     padding-left: 50px;
   }
