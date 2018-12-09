@@ -1,14 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
-const HeaderWrapper = styled.div`
+
+const HeaderWrapperDesktop = styled.div`
+  height: 80px;
   display: flex;
-  height: 101px;
   color: #182153;
   align-items: center;
+  background-color: #ffffff;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-right: 60px;
+  padding-left: 60px;
+  font-size: 14px;
+  font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,
+    sans-serif;
+  text-align: center;
+  line-height: 50px;
+  margin: calc(-1 * 0px) 0px 0;
+`;
+
+const HeaderWrapperDesktopHeading = styled.div`
+  font: normal normal normal 30px/1.4em avenir-lt-w01_35-light1475496,
+    sans-serif;
+  transition: color 0.4s ease 0s;
+  color: #182153;
+  position: relative;
 `;
 
 const MobileHeader = styled.div`
-  background-color: grey;
+  background-color: #FFFFFF;
   padding-top 15px;
   padding-bottom: 15px;
   text-align: center;
@@ -27,8 +47,12 @@ const LinksContainer = styled.div`
 `;
 
 const LinkItem = styled.a`
-  padding: 5px;
-  margin: 10px 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  color: #182153;
+  visited: #182153;
+  hover: #182153;
+  active: #aeb4d4;
 `;
 
 const Space = styled.div`
@@ -44,18 +68,19 @@ class Header extends React.Component {
         <MobileHeader className="d-block d-sm-none">
           <span>Shobhit Jain</span>
         </MobileHeader>
+
         <div className="d-none d-sm-block">
-          <HeaderWrapper>
-            <div>
-              <p>Shobhit Jain</p>
-            </div>
+          <HeaderWrapperDesktop>
+            <HeaderWrapperDesktopHeading>
+              Shobhit Jain
+            </HeaderWrapperDesktopHeading>
             <Space />
             <LinksContainer>
               <LinkItem href="/features">RESEARCH</LinkItem>
               <LinkItem>SKILLS</LinkItem>
               <LinkItem>CV</LinkItem>
             </LinksContainer>
-          </HeaderWrapper>
+          </HeaderWrapperDesktop>
         </div>
       </>
     );
