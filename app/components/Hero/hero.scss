@@ -48,9 +48,15 @@
 }
 
 .content {
+  font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  color: #182153;
   @media only screen and (min-width: 768px) {
     padding-top: 83px;
     padding-left: 83px;
+  }
+  @media only screen and (max-width: 767px) {
+    padding-top: 20px;
+    padding-left: 38px;
   }
 }
 

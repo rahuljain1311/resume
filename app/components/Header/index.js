@@ -12,6 +12,14 @@ const MobileHeader = styled.div`
   padding-top 15px;
   padding-bottom: 15px;
   text-align: center;
+  font-size: 27px;
+  font: normal normal normal 30px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+  transition: color 0.4s ease 0s;
+  color: #182153;
+  display: inline-block;
+  margin: calc(-1 * 0px) 0px 0;
+  position: relative;
+  white-space: nowrap;
 `;
 
 const LinksContainer = styled.div`

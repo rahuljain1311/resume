@@ -13,6 +13,30 @@ const Social = styled.div`
   height: 10%;
 `;
 
+const H1 = styled.div`
+  line-height: 1.3em;
+  font-size: 26px;
+  letter-spacing: 0.05em;
+`;
+
+// const H2 = styled.div`
+//   line-height: 1.3em;
+//   font-size: 23px;
+//   letter-spacing: 0.05em;
+// `;
+
+// const H3 = styled.div`
+//   line-height: 1.3em;
+//   font-size: 20px;
+//   letter-spacing: 0.05em;
+// `;
+
+const H4 = styled.div`
+  line-height: 1.3em;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+`;
+
 /* eslint-disable react/prefer-stateless-function */
 class Hero extends React.Component {
   render() {
@@ -25,25 +49,37 @@ class Hero extends React.Component {
             </div>
             <div className="col-md-6 col-xs-12 content">
               <div className="title">
-                <h6>Rachel Smith</h6>
-                LAWYER & CONSULTANT
+                <H1>Shobhit Jain</H1>
+                <p />
+                <H4>
+                  <b>PhD Candidate</b>
+                </H4>
+                <H4>
+                  <b>Data Sciences and Operations</b>
+                </H4>
+                <H4>
+                  <b>Marshall School of Business</b>
+                </H4>
+                <H4>
+                  <b>University of Southern California</b>
+                </H4>
+                <p />
               </div>
               <div>
-                <h6>Phone:</h6>
-                123-456-7890
+                <H4>
+                  <b>Email:</b>
+                </H4>
+                <H4>shobhit.jain.phd@marshall.usc.edu</H4>
+                <p />
               </div>
               <div>
-                <h6>Email:</h6>
-                info@mysite.com
-              </div>
-              <div>
-                <h6>Address:</h6>
-                <p>500 Terry Francois Street</p>
-                San Francisco, CA 94158
-              </div>
-              <div>
-                <h6>Date of Birth:</h6>
-                March 14th, 1984
+                <H4>
+                  <b>Contact Information:</b>
+                </H4>
+                <H4>Bridge Hall (BRI) 401J</H4>
+                <H4>USC Marshall School of Business</H4>
+                <H4>Los Angeles, CA 90089-0808</H4>
+                <p />
               </div>
             </div>
           </Intro>
