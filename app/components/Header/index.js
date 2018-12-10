@@ -22,7 +22,6 @@ const HeaderWrapperDesktop = styled.div`
 const HeaderWrapperDesktopHeading = styled.div`
   font: normal normal normal 30px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
-  transition: color 0.4s ease 0s;
   color: #182153;
   position: relative;
 `;
@@ -47,12 +46,29 @@ const LinksContainer = styled.div`
 `;
 
 const LinkItem = styled.a`
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
   color: #182153;
   visited: #182153;
   hover: #182153;
   active: #aeb4d4;
+`;
+
+const LinkItemMobile = styled.a`
+  margin-right: 10%;
+  margin-left: 10%;
+  color: #182153;
+  visited: #182153;
+  hover: #182153;
+  active: #aeb4d4;
+  font-size: 15px;
+`;
+
+const HomeLink = styled.a`
+  color: #182153;
+  visited: #182153;
+  hover: #182153;
+  active: #182153;
 `;
 
 const Space = styled.div`
@@ -66,13 +82,20 @@ class Header extends React.Component {
     return (
       <>
         <MobileHeader className="d-block d-sm-none">
-          <span>Shobhit Jain</span>
+          <HomeLink href="/">Shobhit Jain</HomeLink>
+          <LinksContainer>
+            <LinkItemMobile href="/research">RESEARCH</LinkItemMobile>
+            <LinkItemMobile href="/skills">SKILLS</LinkItemMobile>
+            <LinkItemMobile href="https://drive.google.com/file/d/1Jd1Q2UZ2_9LhmSSKWi6ASwxVXHQheE8t/view?usp=sharing">
+              CV
+            </LinkItemMobile>
+          </LinksContainer>
         </MobileHeader>
 
         <div className="d-none d-sm-block">
           <HeaderWrapperDesktop>
             <HeaderWrapperDesktopHeading>
-              Shobhit Jain
+              <HomeLink href="/">Shobhit Jain</HomeLink>
             </HeaderWrapperDesktopHeading>
             <Space />
             <LinksContainer>
