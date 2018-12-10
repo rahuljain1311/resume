@@ -11,19 +11,14 @@ const HeaderWrapperDesktop = styled.div`
   padding-top: 30px;
   padding-right: 60px;
   padding-left: 60px;
-  font-size: 14px;
   font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
-  text-align: center;
-  line-height: 50px;
-  margin: calc(-1 * 0px) 0px 0;
 `;
 
 const HeaderWrapperDesktopHeading = styled.div`
   font: normal normal normal 30px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
   color: #182153;
-  position: relative;
 `;
 
 const MobileHeader = styled.div`
@@ -46,7 +41,6 @@ const LinksContainer = styled.div`
 `;
 
 const LinkItem = styled.a`
-  margin-right: 10%;
   margin-left: 10%;
   color: #182153;
   visited: #182153;
