@@ -6,8 +6,8 @@ const SectionTitle = styled.div`
   font: normal normal normal 25px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
   text-align: center;
-  margin-top: 10%;
-  margin-bottom: 2%;
+  margin-top: 25px;
+  margin-bottom: 15px;
 `;
 
 const SectionHeading = styled.div`
