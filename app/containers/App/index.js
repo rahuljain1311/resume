@@ -16,7 +16,6 @@ import Footer from 'components/Footer';
 import HomePage from 'containers/HomePage/Loadable';
 import ResearchPage from 'containers/ResearchPage/Loadable';
 import SkillsPage from 'containers/SkillsPage/Loadable';
-import CVPage from 'containers/CVPage/Loadable';
 import GlobalStyle from '../../global-styles';
 import { withResponsive } from '../../hoc/with-responsive';
 
@@ -40,7 +39,6 @@ const App = () => (
       <Route exact path="/" component={HomePage} />
       <Route path="/research" component={ResearchPage} />
       <Route path="/skills" component={SkillsPage} />
-      <Route path="/cv" component={CVPage} />
     </Switch>
     <Footer />
     <GlobalStyle />

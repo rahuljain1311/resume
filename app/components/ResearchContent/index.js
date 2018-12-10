@@ -24,7 +24,8 @@ const SectionContent = styled.div`
 const Video = styled.div`
   text-align: center;
   padding-top: 20px;
-  width: 80%;
+  width: 100%;
+  max-width: 300px;
 `;
 
 const ResearchContent = () => (

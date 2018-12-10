@@ -78,7 +78,9 @@ class Header extends React.Component {
             <LinksContainer>
               <LinkItem href="/research">RESEARCH</LinkItem>
               <LinkItem href="/skills">SKILLS</LinkItem>
-              <LinkItem href="/cv">CV</LinkItem>
+              <LinkItem href="https://drive.google.com/file/d/1Jd1Q2UZ2_9LhmSSKWi6ASwxVXHQheE8t/view?usp=sharing">
+                CV
+              </LinkItem>
             </LinksContainer>
           </HeaderWrapperDesktop>
         </div>
