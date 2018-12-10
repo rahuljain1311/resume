@@ -30,7 +30,7 @@ const App = () => (
   <AppWrapper>
     <Helmet
       titleTemplate="%s - React.js Boilerplate"
-      defaultTitle="React.js Boilerplate"
+      defaultTitle="Shobhit Jain"
     >
       <meta name="description" content="A React.js Boilerplate application" />
     </Helmet>
