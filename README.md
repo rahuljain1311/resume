@@ -1,6 +1,6 @@
 #Deploy
 
-`npm run github-deploy`
+`git push heroku master`
 
 Use `npm start` for local deployment and debugging.
 
