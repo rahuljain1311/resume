@@ -1,7 +1,7 @@
 .skillsContentWrapper {
   text-align: justify;
   color: #182153;
-  padding-top: 50px;
+  padding-top: 15px;
   @media only screen and (min-width: 768px) {
     padding-right: 20%;
     padding-left: 20%;
@@ -14,6 +14,8 @@
 
 .sectionHeading {
   @media only screen and (min-width: 768px) {
+    // font-family: normal normal normal 35px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+    font-size: 25px;
     font-weight: bold;
     margin-top: 25px;
     margin-bottom: 15px;
@@ -27,7 +29,7 @@
 
 .sectionSubHeading {
   @media only screen and (min-width: 768px) {
-    font-family: normal normal normal 20px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+    font-size: 22px;
     text-decoration: underline;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -42,7 +44,7 @@
 
 .sectionContent {
   @media only screen and (min-width: 768px) {
-    font-family: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,sans-serif;
+    font-size: 20px;
     padding-left: 30px;
   }
   @media only screen and (max-width: 767px) {
