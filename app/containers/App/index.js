@@ -11,7 +11,7 @@ import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 import Header from 'components/Header';
-import Footer from 'components/Footer';
+// import Footer from 'components/Footer';
 
 import HomePage from 'containers/HomePage/Loadable';
 import ResearchPage from 'containers/ResearchPage/Loadable';
@@ -40,7 +40,7 @@ const App = () => (
       <Route path="/research" component={ResearchPage} />
       <Route path="/skills" component={SkillsPage} />
     </Switch>
-    <Footer />
+    {/* <Footer /> */}
     <GlobalStyle />
   </AppWrapper>
 );

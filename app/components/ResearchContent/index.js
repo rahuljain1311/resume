@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './intro.scss';
 
 const SectionTitle = styled.div`
-  font: normal normal normal 25px/1.4em avenir-lt-w01_35-light1475496,
+  font: normal normal normal 30px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
   text-align: center;
   margin-top: 25px;
@@ -12,19 +12,24 @@ const SectionTitle = styled.div`
 
 const SectionHeading = styled.div`
   font-weight: bold;
-  font: normal normal normal 20px/1.4em avenir-lt-w01_35-light1475496,
+  font: normal normal normal 25px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
 `;
 
 const SectionContent = styled.div`
-  font: normal normal normal 15px/1.4em avenir-lt-w01_35-light1475496,
+  font: normal normal normal 20px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
 `;
 
 const Video = styled.div`
   text-align: center;
   margin: auto;
-  padding-top: 20px;
+`;
+
+const CustomIframe = styled.iframe`
+  width: 60%;
+  height: 390px;
+  overflow: auto;
 `;
 
 const ResearchContent = () => (
@@ -39,6 +44,7 @@ const ResearchContent = () => (
       </a>{' '}
       Under revision for Management Science.{' '}
     </SectionHeading>
+    <br />
     <SectionContent>
       We study the pricing & information provisioning game of a seller who is
       (ex-post) better informed about product availability. Using a Bayesian
@@ -46,9 +52,9 @@ const ResearchContent = () => (
       limited value while personalized information provisioning is profitable,
       having attributes like personalized pricing.
     </SectionContent>
-
+    <br />
     <Video>
-      <iframe
+      <CustomIframe
         src="https://www.youtube.com/embed/I29DYBlCOGY"
         frameBorder="0"
         allowFullScreen
@@ -61,6 +67,7 @@ const ResearchContent = () => (
       K. Drakopoulos, S. Jain, R. Randhawa, “Searching for an Infection in a
       Network”{' '}
     </SectionHeading>
+    <br />
     <SectionContent>
       {' '}
       We study the problem of finding an infected node in the least possible
@@ -70,6 +77,7 @@ const ResearchContent = () => (
       program for the same. We show that the problem is NP Hard for an arbitrary
       graph and derive polynomial time search policies for trees.{' '}
     </SectionContent>
+    <br />
   </div>
 );
 
