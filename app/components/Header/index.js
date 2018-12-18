@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeaderWrapperDesktop = styled.div`
-  height: 80px;
+  height: 60px;
   display: flex;
   color: #182153;
   align-items: center;
   background-color: #ffffff;
-  padding-left: 40%;
-  font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,
+  padding-left: 35%;
+  font: normal normal normal 20px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
 `;
 

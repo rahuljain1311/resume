@@ -3,7 +3,6 @@ import './intro.scss';
 
 const Intro = () => (
   <div className="introWrapper">
-    <div className="introHeading">Hello! I am Shobhit.</div>
     <p className="introContent">
       I am a third year Ph.D. Candidate in Data Sciences and Operations
       department at USC Marshall School of Business co-advised by

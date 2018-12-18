@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import photo from './assets/photo.png';
+import photo from './assets/photo.jpg';
 import './hero.scss';
 import { withResponsive } from '../../hoc/with-responsive';
 
@@ -15,7 +15,7 @@ const Social = styled.div`
 
 const H1 = styled.div`
   line-height: 1.3em;
-  font-size: 26px;
+  font-size: 40px;
   letter-spacing: 0.05em;
 `;
 
@@ -33,7 +33,7 @@ const H1 = styled.div`
 
 const H4 = styled.div`
   line-height: 1.3em;
-  font-size: 14px;
+  font-size: 20px;
   letter-spacing: 0.05em;
 `;
 
