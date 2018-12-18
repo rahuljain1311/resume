@@ -7,18 +7,9 @@ const HeaderWrapperDesktop = styled.div`
   color: #182153;
   align-items: center;
   background-color: #ffffff;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-left: 40%;
   font: normal normal normal 14px/1.4em avenir-lt-w01_35-light1475496,
     sans-serif;
-`;
-
-const HeaderWrapperDesktopHeading = styled.div`
-  font: normal normal normal 30px/1.4em avenir-lt-w01_35-light1475496,
-    sans-serif;
-  color: #182153;
 `;
 
 const MobileHeader = styled.div`
@@ -49,25 +40,13 @@ const LinkItem = styled.a`
 `;
 
 const LinkItemMobile = styled.a`
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
   color: #182153;
   visited: #182153;
   hover: #182153;
   active: #aeb4d4;
   font-size: 15px;
-`;
-
-const HomeLink = styled.a`
-  color: #182153;
-  visited: #182153;
-  hover: #182153;
-  active: #182153;
-`;
-
-const Space = styled.div`
-  display: flex;
-  flex-grow: 1;
 `;
 
 /* eslint-disable react/prefer-stateless-function */
@@ -76,8 +55,8 @@ class Header extends React.Component {
     return (
       <>
         <MobileHeader className="d-block d-sm-none">
-          <HomeLink href="/">Shobhit Jain</HomeLink>
           <LinksContainer>
+            <LinkItemMobile href="/">ABOUT</LinkItemMobile>
             <LinkItemMobile href="/research">RESEARCH</LinkItemMobile>
             <LinkItemMobile href="/skills">SKILLS</LinkItemMobile>
             <LinkItemMobile href="https://drive.google.com/file/d/1Jd1Q2UZ2_9LhmSSKWi6ASwxVXHQheE8t/view?usp=sharing">
@@ -88,11 +67,8 @@ class Header extends React.Component {
 
         <div className="d-none d-sm-block">
           <HeaderWrapperDesktop>
-            <HeaderWrapperDesktopHeading>
-              <HomeLink href="/">Shobhit Jain</HomeLink>
-            </HeaderWrapperDesktopHeading>
-            <Space />
             <LinksContainer>
+              <LinkItem href="/">ABOUT</LinkItem>
               <LinkItem href="/research">RESEARCH</LinkItem>
               <LinkItem href="/skills">SKILLS</LinkItem>
               <LinkItem href="https://drive.google.com/file/d/1Jd1Q2UZ2_9LhmSSKWi6ASwxVXHQheE8t/view?usp=sharing">
